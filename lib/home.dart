@@ -176,7 +176,7 @@ class _CurrentWeatherPageState extends State<CurrentWeatherPage> {
 
 
   Future getWeatherData(String city) async {
-    String apiKey = "ec872a0df70b06ca2c9b30e1d7178a62";
+    String apiKey = "Your API Key";
     var url = "http://api.openweathermap.org/data/2.5/weather?q=$city&appid=$apiKey&units=metric&lang=en";
     
     final response = await http.get(Uri.parse(url));
